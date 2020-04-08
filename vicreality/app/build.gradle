@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "reality.vicreality"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.6.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+}
+
+sceneform.asset('sampledata/bear.fbx',
+        'default',
+        'sampledata/bear.sfa',
+        'src/main/res/raw/bear')
+
+sceneform.asset('sampledata/cat.fbx',
+        'default',
+        'sampledata/cat.sfa',
+        'src/main/res/raw/cat')
+
+sceneform.asset('sampledata/cow.fbx',
+        'default',
+        'sampledata/cow.sfa',
+        'src/main/res/raw/cow')
+
+sceneform.asset('sampledata/dog.fbx',
+        'default',
+        'sampledata/dog.sfa',
+        'src/main/res/raw/dog')
+
+sceneform.asset('sampledata/elephant.fbx',
+        'default',
+        'sampledata/elephant.sfa',
+        'src/main/res/raw/elephant')
+
+sceneform.asset('sampledata/ferret.fbx',
+        'default',
+        'sampledata/ferret.sfa',
+        'src/main/res/raw/ferret')
+
+sceneform.asset('sampledata/hippopotamus.fbx',
+        'default',
+        'sampledata/hippopotamus.sfa',
+        'src/main/res/raw/hippopotamus')
+
+sceneform.asset('sampledata/horse.fbx',
+        'default',
+        'sampledata/horse.sfa',
+        'src/main/res/raw/horse')
+
+sceneform.asset('sampledata/koala_bear.fbx',
+        'default',
+        'sampledata/koala_bear.sfa',
+        'src/main/res/raw/koala_bear')
+
+sceneform.asset('sampledata/lion.fbx',
+        'default',
+        'sampledata/lion.sfa',
+        'src/main/res/raw/lion')
+
+sceneform.asset('sampledata/reindeer.fbx',
+        'default',
+        'sampledata/reindeer.sfa',
+        'src/main/res/raw/reindeer')
+
+sceneform.asset('sampledata/wolverine.fbx',
+        'default',
+        'sampledata/wolverine.sfa',
+        'src/main/res/raw/wolverine')

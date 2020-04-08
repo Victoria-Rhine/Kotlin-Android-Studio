@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basic_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1919"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbarThumbHorizontal="@color/colorAccent"
+        android:scrollbarThumbVertical="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbHorizontal="@color/colorAccent"
+            android:scrollbarThumbVertical="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="250dp"
+                android:layout_height="299dp"
+                android:layout_marginTop="82dp"
+                android:contentDescription="@string/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar_One"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/womanlogo" />
+
+            <EditText
+                android:id="@+id/bill_value"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:background="#AEB6B5"
+                android:contentDescription="logo"
+                android:ems="10"
+                android:hint="@string/total_bill"
+                android:inputType="number|numberDecimal"
+                android:paddingLeft="10dp"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:typeface="serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+
+            <TextView
+                android:id="@+id/percent_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_percent"
+                android:textColor="#C4C7CE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bill_value"
+                app:layout_constraintVertical_bias="0.051" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="260dp"
+                android:layout_height="20dp"
+                android:max="25"
+                android:progress="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/percent_label"
+                app:layout_constraintVertical_bias="0.028"
+                app:tickMarkTint="#C4C7CE" />
+
+            <TextView
+                android:id="@+id/number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/split_number"
+                android:textColor="#C4C7CE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/percent_label"
+                app:layout_constraintVertical_bias="0.098" />
+
+            <SeekBar
+                android:id="@+id/seekBar_One"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="260dp"
+                android:layout_height="20dp"
+                android:max="25"
+                android:progress="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar"
+                app:layout_constraintVertical_bias="0.11"
+                app:tickMarkTint="#C4C7CE" />
+
+            <TextView
+                android:id="@+id/total_label"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:text="@string/total_to_pay"
+                android:textColor="#C4C7CE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.752"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/number_label"
+                app:layout_constraintVertical_bias="0.29" />
+
+            <TextView
+                android:id="@+id/total_to_pay"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:autoText="false"
+                android:background="#AEB6B5"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.782"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/total_label"
+                app:layout_constraintVertical_bias="0.06" />
+
+            <TextView
+                android:id="@+id/per_person_label"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_per_person"
+                android:textColor="#C4C7CE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.862"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/total_to_pay"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/amount_per_person"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:background="#AEB6B5"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/per_person_label"
+                app:layout_constraintVertical_bias="0.104" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/calculate"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:text="@string/calculate"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#9DA4A8"
+                android:typeface="serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bill_value"
+                app:layout_constraintVertical_bias="0.896" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Watch Things with Victoria</string>
+
+    <string name="popular">Popular</string>
+    <string name="most_popular_shows">Most popular shows</string>
+    <string name="most_popular_movies">Most popular movies</string>
+
+    <string name="top_rated">Top Rated</string>
+    <string name="highest_rated_shows">Highest rated shows of all time</string>
+    <string name="highest_rated_movies">Highest rated movies of all time</string>
+
+    <string name="on_the_air">On TV</string>
+    <string name="on_the_air_shows">Stay updated with the latest shows</string>
+    <string name="airing_today">Airing Today</string>
+
+    <string name="airing_today_shows">Currently playing on TV</string>
+    <string name="playing">Now Playing</string>
+    <string name="now_playing">Currently in Theaters</string>
+
+    <string name="upcoming">Upcoming Movies</string>
+    <string name="stay_updated">Stay updated with the latest movies</string>
+
+    <string name="tv_button">Browse TV Shows</string>
+    <string name="movie_button">Browse Movies</string>
+
+    <string name="error_fetch_shows">Please check your internet connection</string>
+    <string name="error_fetch_movies">Please check your internet connection</string>
+</resources>

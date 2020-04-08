@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">future-AR</string>
+    <string name="menu_item_one">ANIMALS A-F</string>
+    <string name="menu_item_two">ANIMALS G-Z</string>
+    <string name="app_home_page">virtual zoo</string>
+</resources>

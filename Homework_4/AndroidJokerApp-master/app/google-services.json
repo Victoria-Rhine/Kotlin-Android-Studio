@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "217215433702",
+    "firebase_url": "https://victoriaproject-850ee.firebaseio.com",
+    "project_id": "victoriaproject-850ee",
+    "storage_bucket": "victoriaproject-850ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217215433702:android:7c7af7daf12045606f7427",
+        "android_client_info": {
+          "package_name": "com.example.android.joker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217215433702-13s3j72ba97lbeqvsgk90t3eg838fb69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfpWnh9wnj6hoXlxegHeZXRcULpJ_SIiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217215433702-13s3j72ba97lbeqvsgk90t3eg838fb69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
